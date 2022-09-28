@@ -1,9 +1,12 @@
+@import 'sassync';
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    height: 100%;
 }
 
 a {
@@ -15,6 +18,26 @@ a {
   box-sizing: border-box;
 }
 
+body {
+  // background-color: rgba(#808080, 0.218);
+}
+
+#__next {
+  height: 100%;
+  display: unset;
+}
+.app-main-page {
+  height: 100%;
+  display: flex;
+
+
+  
+  @include max-min(min 650 + px) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -23,4 +46,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
